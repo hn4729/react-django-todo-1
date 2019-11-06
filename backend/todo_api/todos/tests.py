@@ -9,7 +9,7 @@ class TodoModelTest(TestCase):
     @classmethod
     def setUpTestData(cls):
         Todo.objects.create(title='first todo')
-        Todo.objects.create(description="a description here")
+        Todo.objects.create(description='a description here')
 
     def test_title_content(self):
         todo = Todo.objects.get(id=1)
